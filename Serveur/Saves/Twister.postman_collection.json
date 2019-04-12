@@ -1,0 +1,587 @@
+{
+	"info": {
+		"_postman_id": "8799b95f-9df0-4737-a56d-4deb573abfdf",
+		"name": "Twister",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Messages",
+			"item": [
+				{
+					"name": "deleteMessage",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/TwisterFinal/Messages?key=056dfce0150040b58886e19eb42c2af2&idMessage=5c682dfb8d6a4cf5b989dd1d",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TwisterFinal",
+								"Messages"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "056dfce0150040b58886e19eb42c2af2"
+								},
+								{
+									"key": "idMessage",
+									"value": "5c682dfb8d6a4cf5b989dd1d"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listMessage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/TwisterFinal/Messages?op=list&limit=20&key=0213371c636f4d8a99ebb86ef19c1fdd&idUser=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TwisterFinal",
+								"Messages"
+							],
+							"query": [
+								{
+									"key": "op",
+									"value": "list"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "key",
+									"value": "0213371c636f4d8a99ebb86ef19c1fdd"
+								},
+								{
+									"key": "idUser",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListFriendsMessage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/TwisterFinal/Messages?op=friends&limit=20&key=b08682071d33457f962e4a013c3129e9",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TwisterFinal",
+								"Messages"
+							],
+							"query": [
+								{
+									"key": "op",
+									"value": "friends"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "key",
+									"value": "b08682071d33457f962e4a013c3129e9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getMessage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/TwisterFinal/Messages?op=one&idMessage=5c682a0c8d6a4049b1ea3f8d&key=056dfce0150040b58886e19eb42c2af2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TwisterFinal",
+								"Messages"
+							],
+							"query": [
+								{
+									"key": "op",
+									"value": "one"
+								},
+								{
+									"key": "idMessage",
+									"value": "5c682a0c8d6a4049b1ea3f8d"
+								},
+								{
+									"key": "key",
+									"value": "056dfce0150040b58886e19eb42c2af2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendMessage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/TwisterFinal/Messages?key=056dfce0150040b58886e19eb42c2af2&content=hello world!&op=message",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TwisterFinal",
+								"Messages"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "056dfce0150040b58886e19eb42c2af2"
+								},
+								{
+									"key": "content",
+									"value": "hello world!"
+								},
+								{
+									"key": "op",
+									"value": "message"
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendComments",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/TwisterFinal/Messages?key=056dfce0150040b58886e19eb42c2af2&content=hello world!3&op=comment&idMessage=5c6828d58d6ac8faa9e2323f",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TwisterFinal",
+								"Messages"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "056dfce0150040b58886e19eb42c2af2"
+								},
+								{
+									"key": "content",
+									"value": "hello world!3"
+								},
+								{
+									"key": "op",
+									"value": "comment"
+								},
+								{
+									"key": "idMessage",
+									"value": "5c6828d58d6ac8faa9e2323f"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Friends",
+			"item": [
+				{
+					"name": "deleteFriend",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/TwisterFinal/Friends?id=1&key=c8c41e867d6141878b238ba6959b161c",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TwisterFinal",
+								"Friends"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "key",
+									"value": "c8c41e867d6141878b238ba6959b161c"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/TwisterFinal/Friends?op=req&key=5c864fe0d36e42f69c4bd8531e5b4791&id=5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TwisterFinal",
+								"Friends"
+							],
+							"query": [
+								{
+									"key": "op",
+									"value": "req"
+								},
+								{
+									"key": "key",
+									"value": "5c864fe0d36e42f69c4bd8531e5b4791"
+								},
+								{
+									"key": "id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "disApprove",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/TwisterFinal/Friends?key=1&id=5c864fe0d36e42f69c4bd8531e5b4791&op=dis",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TwisterFinal",
+								"Friends"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "1"
+								},
+								{
+									"key": "id",
+									"value": "5c864fe0d36e42f69c4bd8531e5b4791"
+								},
+								{
+									"key": "op",
+									"value": "dis"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFollowing",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/TwisterFinal/Friends?op=following&key=c8c41e867d6141878b238ba6959b161c",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TwisterFinal",
+								"Friends"
+							],
+							"query": [
+								{
+									"key": "op",
+									"value": "following"
+								},
+								{
+									"key": "key",
+									"value": "c8c41e867d6141878b238ba6959b161c"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "approve",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/TwisterFinal/Friends?key=c8c41e867d6141878b238ba6959b161c&id=6&op=app",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TwisterFinal",
+								"Friends"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "c8c41e867d6141878b238ba6959b161c"
+								},
+								{
+									"key": "id",
+									"value": "6"
+								},
+								{
+									"key": "op",
+									"value": "app"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFollower",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/TwisterFinal/Friends?op=follower&key=c8c41e867d6141878b238ba6959b161c",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TwisterFinal",
+								"Friends"
+							],
+							"query": [
+								{
+									"key": "op",
+									"value": "follower"
+								},
+								{
+									"key": "key",
+									"value": "c8c41e867d6141878b238ba6959b161c"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "createUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/TwisterFinal/CreateUser?username=user6&password=password&mail=email6&nom=nom&prenom=prenom&date=2000-01-01&sexe=true",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TwisterFinal",
+								"CreateUser"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "user6"
+								},
+								{
+									"key": "password",
+									"value": "password"
+								},
+								{
+									"key": "mail",
+									"value": "email6"
+								},
+								{
+									"key": "nom",
+									"value": "nom"
+								},
+								{
+									"key": "prenom",
+									"value": "prenom"
+								},
+								{
+									"key": "date",
+									"value": "2000-01-01"
+								},
+								{
+									"key": "sexe",
+									"value": "true"
+								}
+							]
+						},
+						"description": "CreateUser\n"
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/TwisterFinal/Logout?key=key",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TwisterFinal",
+								"Logout"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "key"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/TwisterFinal/Login?user=1&password=password",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TwisterFinal",
+								"Login"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "1"
+								},
+								{
+									"key": "password",
+									"value": "password"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
