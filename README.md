@@ -46,7 +46,6 @@ L'application sera en architecture client-serveur, en modèle orienté services
 
 ### Membres du projet
 * NEDJAM Salim Toufik
-* Ait Ghezali Juba
 
 
 # Legal
