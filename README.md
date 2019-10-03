@@ -1,12 +1,8 @@
-# 3I017_Twister
-Projet du module 3I017 Technologies Web (L3 UPMC)
-
-## Cours Suivi
-Cours par [Laure Soulier](http://www-connex.lip6.fr/~soulier/content/about.html).
-Unité d'enseignement de L3, [3I017 Technologies Web](http://www-connex.lip6.fr/~soulier/content/TechnoWeb/TechnoWeb.html) à [Sorbonne Université Faculté des Sciences](https://www.sorbonne-universite.fr/) 
+# Twister (twitter alternative)
+Projet du module 3I017 Technologies Web
 
 ## Projet
-Réalisation d'un réseau social de type tweeter.
+Réalisation d'un réseau social de type twitter.
 L'application sera en architecture client-serveur, en modèle orienté services
 
 
@@ -23,8 +19,8 @@ L'application sera en architecture client-serveur, en modèle orienté services
 * Recherche (recherche des utilisteurs par mot clés,recherche de message avec la technologie Map-Reduce et calcul du score)
 
 ### Client
-* HTML (Sans Bootstrap)
-* CSS (Sans Bootstrap)
+* HTML (From scratch)
+* CSS (From scratch)
 * React
 * Axios
 
