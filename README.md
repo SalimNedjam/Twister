@@ -37,5 +37,9 @@ L'application sera en architecture client-serveur, en modèle orienté services
 * Page de profile d'un utilisateur
 * Page des resultats de la recherche
 
+![Screenshot](https://github.com/SalimNedjam/Twister/blob/master/Profile.jpg)
+
+![Screenshot](https://github.com/SalimNedjam/Twister/blob/master/Post.jpg)
+
 # Legal
 Interdiction d'utilisation et de modification de tout code dont je suis l'auteur sans autorisation.
